@@ -76,5 +76,6 @@ dataset_4 <- dataset_3 %>%
         group_by(activity_labels, subject) %>%
         summarise_all("mean")
 
+write.table(dataset_4, file = "dataset_final.txt", row.name = FALSE)
 
 
